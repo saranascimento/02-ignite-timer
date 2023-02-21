@@ -42,8 +42,8 @@ export function Home() {
 
   return (
     <HomeContainer>
-      <form>
-        <FormContainer onSubmit={handleSubmit(handleCreateNewCycle)}>
+      <form onSubmit={handleSubmit(handleCreateNewCycle)}>
+        <FormContainer>
           <label htmlFor="task">Vou trabalhar em</label>
           <TaskInput
             id="task"
